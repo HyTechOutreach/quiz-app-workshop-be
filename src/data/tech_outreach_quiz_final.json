@@ -1,0 +1,923 @@
+{
+  "multiple": {
+    "angular": [
+      {
+        "answer": ["a", "b", "c"],
+        "id": "a1b2c3d4e5f6",
+        "options": {
+          "a": "*ngIf",
+          "b": "*ngFor",
+          "c": "*ngSwitch",
+          "d": "ngClass"
+        },
+        "question": "Które z poniższych są wbudowanymi dyrektywami strukturalnymi w Angularze?"
+      },
+      {
+        "answer": ["a", "b", "c", "d"],
+        "id": "f6e5d4c3b2a1",
+        "options": {
+          "a": "ngOnInit",
+          "b": "ngOnChanges",
+          "c": "ngAfterViewInit",
+          "d": "ngOnDestroy"
+        },
+        "question": "Które z poniższych są hookami cyklu życia komponentu?"
+      },
+      {
+        "answer": ["a", "b", "d"],
+        "id": "1a2b3c4d5e6f",
+        "options": {
+          "a": "Interpolacja {{}}",
+          "b": "Property binding []",
+          "c": "Event binding ()",
+          "d": "Two-way binding [()]"
+        },
+        "question": "Które z poniższych typów bindowania danych pozwalają na przepływ danych z komponentu (klasy TS) do widoku (szablonu HTML)?"
+      },
+      {
+        "answer": ["b", "c", "d"],
+        "id": "6f5e4d3c2b1a",
+        "options": {
+          "a": "@Input",
+          "b": "@Directive",
+          "c": "@Pipe",
+          "d": "@Component"
+        },
+        "question": "Które z poniższych dekoratorów definiują klasę jako specyficzny element Angulara?"
+      },
+      {
+        "answer": ["a", "b", "d"],
+        "id": "abcdef123456",
+        "options": {
+          "a": "Observable",
+          "b": "Subject",
+          "c": "Promise",
+          "d": "Operator"
+        },
+        "question": "Które z poniższych są podstawowymi koncepcjami biblioteki RxJS, często używanej w Angularze?"
+      },
+      {
+        "answer": ["a", "b", "c"],
+        "id": "654321fedcba",
+        "options": {
+          "a": "Użycie `@Injectable({ providedIn: 'root' })`",
+          "b": "Dodanie serwisu do tablicy `providers` w module",
+          "c": "Dodanie serwisu do tablicy `providers` w komponencie",
+          "d": "Dodanie serwisu do tablicy `imports` w module"
+        },
+        "question": "Które z poniższych są poprawnymi sposobami dostarczania serwisu w aplikacji?"
+      },
+      {
+        "answer": ["a", "c"],
+        "id": "0123456789ab",
+        "options": {
+          "a": "ng build",
+          "b": "ng test",
+          "c": "ng serve",
+          "d": "ng add"
+        },
+        "question": "Które z komend Angular CLI służą do uruchamiania i budowania aplikacji?"
+      },
+      {
+        "answer": ["b", "d"],
+        "id": "ba9876543210",
+        "options": {
+          "a": "Moduły",
+          "b": "Komponenty",
+          "c": "Serwisy",
+          "d": "Pipe'y (Rury)"
+        },
+        "question": "Co można umieścić w tablicy `declarations` w dekoratorze `@NgModule`?"
+      },
+      {
+        "answer": ["a", "c", "d"],
+        "id": "cdefab012345",
+        "options": {
+          "a": "Współdzielony serwis z Subject/BehaviorSubject",
+          "b": "Użycie `@Input()` i `@Output()`",
+          "c": "Biblioteka do zarządzania stanem, np. NgRx",
+          "d": "Parametry w ścieżce routingu"
+        },
+        "question": "Które z poniższych mechanizmów mogą być użyte do komunikacji między komponentami, które nie mają bezpośredniej relacji rodzic-dziecko?"
+      },
+      {
+        "answer": ["a", "b", "d"],
+        "id": "543210fedcba",
+        "options": {
+          "a": "app-routing.module.ts",
+          "b": "RouterModule",
+          "c": "HttpClientModule",
+          "d": "<router-outlet>"
+        },
+        "question": "Które z poniższych plików lub elementów kodu są bezpośrednio związane z routingiem w Angularze?"
+      },
+      {
+        "answer": ["a", "b"],
+        "id": "9876543210fe",
+        "options": {
+          "a": "OnPush",
+          "b": "Default",
+          "c": "Immediate",
+          "d": "OnHover"
+        },
+        "question": "Która z poniższych strategii detekcji zmian (`ChangeDetectionStrategy`) istnieje w Angularze?"
+      },
+      {
+        "answer": ["a", "b", "c"],
+        "id": "fedcba098765",
+        "options": {
+          "a": "Szybsze początkowe ładowanie aplikacji",
+          "b": "Zmniejszenie rozmiaru początkowego pakietu (bundle)",
+          "c": "Ładowanie kodu na żądanie",
+          "d": "Uproszczenie struktury kodu"
+        },
+        "question": "Jakie są korzyści z leniwego ładowania (Lazy Loading) modułów w Angularze?"
+      },
+      {
+        "answer": ["b", "c"],
+        "id": "a1b2c3d4e5f7",
+        "options": {
+          "a": "value",
+          "b": "valid",
+          "c": "errors",
+          "d": "pristine"
+        },
+        "question": "Które z poniższych właściwości obiektu `FormControl` odzwierciedlają jego stan walidacji?"
+      },
+      {
+        "answer": ["a", "b", "c", "d"],
+        "id": "7f5e4d3c2b1a",
+        "options": {
+          "a": "selector",
+          "b": "templateUrl",
+          "c": "styleUrls",
+          "d": "providers"
+        },
+        "question": "Które z poniższych są poprawnymi właściwościami w metadata dekoratora @Component?"
+      },
+      {
+        "answer": ["a", "d"],
+        "id": "1a2b3c4d5e6g",
+        "options": {
+          "a": "DatePipe",
+          "b": "RouterPipe",
+          "c": "CommonPipe",
+          "d": "JsonPipe"
+        },
+        "question": "Które z poniższych jest wbudowanym w Angular pipe'em (rurą)?"
+      }
+    ],
+    "polska": [
+      {
+        "answer": ["a", "c", "d"],
+        "id": "e1f2a3b4c5d6",
+        "options": {
+          "a": "Gniezno",
+          "b": "Gdańsk",
+          "c": "Kraków",
+          "d": "Płock"
+        },
+        "question": "Które z poniższych miast były w przeszłości stolicami Polski?"
+      },
+      {
+        "answer": ["b", "c", "d"],
+        "id": "6d5c4b3a2f1e",
+        "options": {
+          "a": "Węgry",
+          "b": "Słowacja",
+          "c": "Ukraina",
+          "d": "Litwa"
+        },
+        "question": "Które z poniższych państw graniczą z Polską?"
+      },
+      {
+        "answer": ["a", "d"],
+        "id": "a1b2c3d4e5f9",
+        "options": {
+          "a": "Żurek",
+          "b": "Gazpacho",
+          "c": "Ramen",
+          "d": "Barszcz czerwony"
+        },
+        "question": "Które z poniższych to tradycyjne polskie zupy?"
+      },
+      {
+        "answer": ["a", "b", "d"],
+        "id": "9f8e7d6c5b4a",
+        "options": {
+          "a": "Maria Skłodowska-Curie",
+          "b": "Lech Wałęsa",
+          "c": "Adam Mickiewicz",
+          "d": "Olga Tokarczuk"
+        },
+        "question": "Które z tych osób to polscy laureaci Nagrody Nobla?"
+      },
+      {
+        "answer": ["a", "c"],
+        "id": "123456abcdef",
+        "options": { "a": "Wisła", "b": "Dunaj", "c": "Odra", "d": "Sekwana" },
+        "question": "Które z głównych rzek przepływają przez Polskę?"
+      },
+      {
+        "answer": ["a", "b", "c"],
+        "id": "fedcba654321",
+        "options": {
+          "a": "Tatry",
+          "b": "Bieszczady",
+          "c": "Sudety",
+          "d": "Alpy"
+        },
+        "question": "Które z tych pasm górskich znajdują się w całości lub częściowo w Polsce?"
+      },
+      {
+        "answer": ["a", "b", "c", "d"],
+        "id": "0987654321ab",
+        "options": {
+          "a": "Odzyskanie niepodległości w 1918 r.",
+          "b": "Powstanie Warszawskie w 1944 r.",
+          "c": "Powstanie ruchu 'Solidarność' w latach 80.",
+          "d": "Wstąpienie do NATO w 1999 r."
+        },
+        "question": "Które z tych wydarzeń są kluczowe w historii Polski XX wieku?"
+      },
+      {
+        "answer": ["a", "d"],
+        "id": "ba1234567890",
+        "options": {
+          "a": "Zamek na Wawelu",
+          "b": "Zamek Neuschwanstein",
+          "c": "Zamek w Windsorze",
+          "d": "Zamek w Malborku"
+        },
+        "question": "Które z tych zamków to słynne polskie warownie?"
+      },
+      {
+        "answer": ["b", "c"],
+        "id": "cdefab123456",
+        "options": {
+          "a": "Kraków",
+          "b": "Gdańsk",
+          "c": "Gdynia",
+          "d": "Wrocław"
+        },
+        "question": "Które z tych miast to ważne polskie porty morskie nad Bałtykiem?"
+      },
+      {
+        "answer": ["a", "b", "d"],
+        "id": "654321fedcba0",
+        "options": {
+          "a": "Fryderyk Chopin",
+          "b": "Krzysztof Penderecki",
+          "c": "Ludwig van Beethoven",
+          "d": "Stanisław Moniuszko"
+        },
+        "question": "Którzy z nich to słynni polscy kompozytorzy?"
+      },
+      {
+        "answer": ["a", "c"],
+        "id": "1234567890fe",
+        "options": {
+          "a": "3 maja (Święto Konstytucji 3 Maja)",
+          "b": "24 grudnia (Wigilia)",
+          "c": "11 listopada (Narodowe Święto Niepodległości)",
+          "d": "1 kwietnia (Prima Aprilis)"
+        },
+        "question": "Które z tych dni są w Polsce świętami państwowymi i dniami wolnymi od pracy?"
+      },
+      {
+        "answer": ["a", "b", "c"],
+        "id": "fe0987654321",
+        "options": {
+          "a": "Bolesław I Chrobry",
+          "b": "Kazimierz III Wielki",
+          "c": "Jan III Sobieski",
+          "d": "Juliusz Cezar"
+        },
+        "question": "Które z tych postaci historycznych były władcami Polski?"
+      },
+      {
+        "answer": ["a", "d"],
+        "id": "a7b8c9d0e1f2",
+        "options": {
+          "a": "Orzeł Biały",
+          "b": "Liść klonu",
+          "c": "Wieża Eiffla",
+          "d": "Flaga biało-czerwona"
+        },
+        "question": "Które z poniższych to oficjalne symbole narodowe Polski?"
+      },
+      {
+        "answer": ["b", "c", "d"],
+        "id": "2f1e0d9c8b7a",
+        "options": {
+          "a": "Pizza",
+          "b": "Pierogi",
+          "c": "Bigos",
+          "d": "Gołąbki"
+        },
+        "question": "Które z tych potraw są powszechnie uznawane za tradycyjne dania polskie?"
+      },
+      {
+        "answer": ["b"],
+        "id": "3a4b5c6d7e8f",
+        "options": {
+          "a": "Isaac Newton",
+          "b": "Mikołaj Kopernik",
+          "c": "Albert Einstein",
+          "d": "Galileusz"
+        },
+        "question": "Który z tych naukowców polskiego pochodzenia dokonał przełomowego odkrycia w swojej dziedzinie?"
+      }
+    ],
+    "zwierzeta": [
+      {
+        "answer": ["a", "d"],
+        "id": "h1i2j3k4l5m6",
+        "options": {
+          "a": "Wieloryb",
+          "b": "Rekin",
+          "c": "Ośmiornica",
+          "d": "Delfin"
+        },
+        "question": "Które z poniższych ssaków żyją w oceanie?"
+      },
+      {
+        "answer": ["b", "c", "d"],
+        "id": "m6l5k4j3i2h1",
+        "options": { "a": "Lama", "b": "Koala", "c": "Kangur", "d": "Wombat" },
+        "question": "Które z tych zwierząt naturalnie występują w Australii?"
+      },
+      {
+        "answer": ["a", "b", "c"],
+        "id": "1h2i3j4k5l6m",
+        "options": { "a": "Krokodyl", "b": "Żółw", "c": "Wąż", "d": "Żaba" },
+        "question": "Które z poniższych zwierząt są gadami?"
+      },
+      {
+        "answer": ["a", "d"],
+        "id": "m6l5k4j3i2h2",
+        "options": { "a": "Orzeł", "b": "Gołąb", "c": "Wróbel", "d": "Sokół" },
+        "question": "Które z poniższych to ptaki drapieżne?"
+      },
+      {
+        "answer": ["a", "b", "c", "d"],
+        "id": "abcdef789012",
+        "options": {
+          "a": "Kura",
+          "b": "Dziobak",
+          "c": "Jaszczurka",
+          "d": "Struś"
+        },
+        "question": "Które z tych zwierząt składają jaja?"
+      },
+      {
+        "answer": ["b", "d"],
+        "id": "210987fedcba",
+        "options": {
+          "a": "Ryba",
+          "b": "Meduza",
+          "c": "Jaszczurka",
+          "d": "Ślimak"
+        },
+        "question": "Które z tych zwierząt są bezkręgowcami (nie mają kręgosłupa)?"
+      },
+      {
+        "answer": ["a", "c"],
+        "id": "3456789abcde",
+        "options": { "a": "Niedźwiedź", "b": "Wilk", "c": "Jeż", "d": "Sarna" },
+        "question": "Które zwierzęta są znane z zapadania w sen zimowy (hibernacji)?"
+      },
+      {
+        "answer": ["a", "b", "d"],
+        "id": "edcba9876543",
+        "options": { "a": "Lew", "b": "Tygrys", "c": "Hiena", "d": "Gepard" },
+        "question": "Które z tych zwierząt należą do rodziny kotowatych?"
+      },
+      {
+        "answer": ["a", "b"],
+        "id": "f0123456789a",
+        "options": { "a": "Krowa", "b": "Żyrafa", "c": "Lew", "d": "Wilk" },
+        "question": "Które zwierzęta są roślinożercami?"
+      },
+      {
+        "answer": ["c", "d"],
+        "id": "a9876543210f",
+        "options": {
+          "a": "Szczur wędrowny",
+          "b": "Gołąb skalny",
+          "c": "Lampart amurski",
+          "d": "Nosorożec czarny"
+        },
+        "question": "Które z tych zwierząt są krytycznie zagrożone wyginięciem?"
+      },
+      {
+        "answer": ["a", "b", "c"],
+        "id": "b2c3d4e5f6a7",
+        "options": {
+          "a": "Mrówki",
+          "b": "Wilki",
+          "c": "Słonie",
+          "d": "Niedźwiedzie polarne"
+        },
+        "question": "Które zwierzęta żyją w złożonych grupach społecznych?"
+      },
+      {
+        "answer": ["a", "d"],
+        "id": "7a6f5e4d3c2b",
+        "options": {
+          "a": "Żaba",
+          "b": "Jaszczurka",
+          "c": "Wąż",
+          "d": "Salamandra"
+        },
+        "question": "Które z tych stworzeń są płazami?"
+      },
+      {
+        "answer": ["a", "b", "c"],
+        "id": "3d4e5f6a7b8c",
+        "options": { "a": "Żubr", "b": "Dzik", "c": "Bóbr", "d": "Tygrys" },
+        "question": "Które z tych zwierząt można spotkać w polskich lasach?"
+      },
+      {
+        "answer": ["a", "b", "d"],
+        "id": "c8b7a6f5e4d3",
+        "options": {
+          "a": "Posiadają włosy lub sierść",
+          "b": "Karmią młode mlekiem",
+          "c": "Wszystkie żyją na lądzie",
+          "d": "Są kręgowcami"
+        },
+        "question": "Które z poniższych są cechami ssaków?"
+      },
+      {
+        "answer": ["b"],
+        "id": "d5e6f7a8b9c0",
+        "options": {
+          "a": "Jeżozwierz",
+          "b": "Czarna wdowa (pająk)",
+          "c": "Jeż",
+          "d": "Biedronka"
+        },
+        "question": "Które z tych zwierząt jest jadowite?"
+      }
+    ]
+  },
+  "single": {
+    "angular": [
+      {
+        "answer": "b",
+        "id": "g1h2i3j4k5l6",
+        "options": {
+          "a": "JavaScript",
+          "b": "TypeScript",
+          "c": "Dart",
+          "d": "Java"
+        },
+        "question": "Jaki jest główny język programowania używany w Angularze?"
+      },
+      {
+        "answer": "c",
+        "id": "l6k5j4i3h2g1",
+        "options": {
+          "a": "package.json",
+          "b": "tsconfig.json",
+          "c": "angular.json",
+          "d": "main.ts"
+        },
+        "question": "Który plik konfiguracyjny definiuje metadane i ustawienia projektu Angular?"
+      },
+      {
+        "answer": "c",
+        "id": "1g2h3i4j5k6l",
+        "options": {
+          "a": "Moduł",
+          "b": "Serwis",
+          "c": "Komponent",
+          "d": "Dyrektywa"
+        },
+        "question": "Jak nazywa się podstawowy budulec interfejsu użytkownika w aplikacji Angular?"
+      },
+      {
+        "answer": "d",
+        "id": "l6k5j4i3h2g2",
+        "options": {
+          "a": "ng new component <nazwa>",
+          "b": "ng add component <nazwa>",
+          "c": "ng make component <nazwa>",
+          "d": "ng generate component <nazwa>"
+        },
+        "question": "Która komenda Angular CLI służy do wygenerowania nowego komponentu?"
+      },
+      {
+        "answer": "c",
+        "id": "m1n2o3p4q5r6",
+        "options": {
+          "a": "@NgModule",
+          "b": "@Injectable",
+          "c": "@Component",
+          "d": "@Directive"
+        },
+        "question": "Który dekorator jest używany do zdefiniowania komponentu w Angularze?"
+      },
+      {
+        "answer": "d",
+        "id": "r6q5p4o3n2m1",
+        "options": {
+          "a": "Singleton",
+          "b": "Factory",
+          "c": "Observer",
+          "d": "Dependency Injection"
+        },
+        "question": "Jak nazywa się wzorzec projektowy w Angularze, który pozwala na dostarczanie instancji klas (serwisów) do komponentów?"
+      },
+      {
+        "answer": "b",
+        "id": "s7t8u9v0w1x2",
+        "options": {
+          "a": "ngOnChanges",
+          "b": "ngOnInit",
+          "c": "ngAfterViewInit",
+          "d": "constructor"
+        },
+        "question": "Który hook cyklu życia komponentu jest wywoływany raz, po zainicjowaniu wszystkich właściwości powiązanych z danymi?"
+      },
+      {
+        "answer": "b",
+        "id": "x2w1v0u9t8s7",
+        "options": {
+          "a": "Do warunkowego wyświetlania elementu",
+          "b": "Do iterowania po kolekcji i renderowania szablonu dla każdego elementu",
+          "c": "Do zmiany stylów CSS elementu",
+          "d": "Do obsługi zdarzeń kliknięcia"
+        },
+        "question": "Do czego służy dyrektywa `*ngFor`?"
+      },
+      {
+        "answer": "b",
+        "id": "y3z4a5b6c7d8",
+        "options": {
+          "a": "RouterOutlet",
+          "b": "Routes (tablica konfiguracji tras)",
+          "c": "RouterLink",
+          "d": "ActivatedRoute"
+        },
+        "question": "Co jest głównym elementem `RouterModule`, który mapuje ścieżki URL na komponenty?"
+      },
+      {
+        "answer": "d",
+        "id": "8d7c6b5a4z3y",
+        "options": { "a": "{{}}", "b": "[]", "c": "()", "d": "[()]" },
+        "question": "Jaki symbol jest używany do dwukierunkowego bindowania danych (two-way binding)?"
+      },
+      {
+        "answer": "b",
+        "id": "e9f0a1b2c3d4",
+        "options": {
+          "a": "Pojedynczą wartością zwracaną w przyszłości (Promise)",
+          "b": "Strumieniem wielu wartości emitowanych w czasie",
+          "c": "Funkcją zwrotną (callback)",
+          "d": "Zmienną globalną"
+        },
+        "question": "Czym jest `Observable`, często używane w Angularze do obsługi operacji asynchronicznych?"
+      },
+      {
+        "answer": "b",
+        "id": "4d3c2b1a0f9e",
+        "options": {
+          "a": "@Output",
+          "b": "@Input",
+          "c": "@ViewChild",
+          "d": "@Inject"
+        },
+        "question": "Który dekorator służy do przekazywania danych z komponentu nadrzędnego do podrzędnego?"
+      },
+      {
+        "answer": "b",
+        "id": "g5h6i7j8k9l0",
+        "options": {
+          "a": "JIT (Just-In-Time)",
+          "b": "AOT (Ahead-Of-Time)",
+          "c": "TTC (Time-To-Compile)",
+          "d": "BIV (Build-In-View)"
+        },
+        "question": "Jak nazywa się domyślny tryb kompilacji w Angularze dla środowiska produkcyjnego, który optymalizuje wydajność?"
+      },
+      {
+        "answer": "b",
+        "id": "0l9k8j7i6h5g",
+        "options": {
+          "a": "Sposób na łączenie komponentów",
+          "b": "Funkcja do transformacji danych do wyświetlenia w szablonie",
+          "c": "Połączenie z serwerem danych",
+          "d": "Element routingu"
+        },
+        "question": "Co to jest `pipe` w Angularze?"
+      },
+      {
+        "answer": "c",
+        "id": "m2n3o4p5q6r7",
+        "options": {
+          "a": "CoreModule",
+          "b": "SharedModule",
+          "c": "AppModule",
+          "d": "MainModule"
+        },
+        "question": "Jak nazywa się główny moduł aplikacji, który jest ładowany na starcie?"
+      }
+    ],
+    "polska": [
+      {
+        "answer": "d",
+        "id": "f4a5b6c7d8e9",
+        "options": {
+          "a": "Kraków",
+          "b": "Gdańsk",
+          "c": "Poznań",
+          "d": "Warszawa"
+        },
+        "question": "Jaka jest stolica Polski?"
+      },
+      {
+        "answer": "b",
+        "id": "9e8d7c6b5a4f",
+        "options": { "a": "Odra", "b": "Wisła", "c": "Warta", "d": "Bug" },
+        "question": "Jaka jest najdłuższa rzeka w Polsce?"
+      },
+      {
+        "answer": "c",
+        "id": "a1b2c3d4e5f3",
+        "options": { "a": "1999", "b": "2001", "c": "2004", "d": "2007" },
+        "question": "W którym roku Polska przystąpiła do Unii Europejskiej?"
+      },
+      {
+        "answer": "b",
+        "id": "3f5e4d3c2b1a",
+        "options": {
+          "a": "Mieszko I",
+          "b": "Bolesław I Chrobry",
+          "c": "Kazimierz Wielki",
+          "d": "Władysław Jagiełło"
+        },
+        "question": "Kto był pierwszym koronowanym królem Polski?"
+      },
+      {
+        "answer": "c",
+        "id": "1a2b3c4d5e7f",
+        "options": {
+          "a": "Bieszczady",
+          "b": "Karkonosze",
+          "c": "Tatry",
+          "d": "Góry Świętokrzyskie"
+        },
+        "question": "Jakie są najwyższe góry w Polsce?"
+      },
+      {
+        "answer": "c",
+        "id": "7f5e4d3c2b1a",
+        "options": {
+          "a": "Pięcioma",
+          "b": "Sześcioma",
+          "c": "Siedmioma",
+          "d": "Ośmioma"
+        },
+        "question": "Z iloma państwami graniczy Polska?"
+      },
+      {
+        "answer": "c",
+        "id": "3d4e5f6a7b8d",
+        "options": { "a": "Korona", "b": "Euro", "c": "Złoty", "d": "Marka" },
+        "question": "Jak nazywa się polska waluta?"
+      },
+      {
+        "answer": "c",
+        "id": "d8c7b6a5f4e3",
+        "options": {
+          "a": "Juliusz Słowacki",
+          "b": "Henryk Sienkiewicz",
+          "c": "Adam Mickiewicz",
+          "d": "Bolesław Prus"
+        },
+        "question": "Kto napisał polską epopeję narodową \"Pan Tadeusz\"?"
+      },
+      {
+        "answer": "a",
+        "id": "e9f0a1b2c3d5",
+        "options": { "a": "966", "b": "1025", "c": "1410", "d": "1918" },
+        "question": "W którym roku symbolicznie odbył się chrzest Polski?"
+      },
+      {
+        "answer": "b",
+        "id": "5d4c3b2a1f0e",
+        "options": {
+          "a": "Jan Heweliusz",
+          "b": "Mikołaj Kopernik",
+          "c": "Maria Skłodowska-Curie",
+          "d": "Ignacy Łukasiewicz"
+        },
+        "question": "Jaki polski astronom jest autorem teorii heliocentrycznej?"
+      },
+      {
+        "answer": "b",
+        "id": "f6a7b8c9d0e1",
+        "options": {
+          "a": "Katowice",
+          "b": "Wieliczka",
+          "c": "Gdańsk",
+          "d": "Lublin"
+        },
+        "question": "Które polskie miasto słynie z historycznej kopalni soli?"
+      },
+      {
+        "answer": "d",
+        "id": "1e0d9c8b7a6f",
+        "options": {
+          "a": "Mazurek",
+          "b": "Krakowiak",
+          "c": "Oberek",
+          "d": "Polonez"
+        },
+        "question": "Jak nazywa się polski taniec narodowy, tradycyjnie otwierający bale?"
+      },
+      {
+        "answer": "b",
+        "id": "2f3a4b5c6d7e",
+        "options": {
+          "a": "Adam Mickiewicz",
+          "b": "Józef Wybicki",
+          "c": "Fryderyk Chopin",
+          "d": "Jan Matejko"
+        },
+        "question": "Kto jest autorem słów \"Mazurka Dąbrowskiego\", hymnu Polski?"
+      },
+      {
+        "answer": "d",
+        "id": "e7d6c5b4a3f2",
+        "options": {
+          "a": "Morze Północne",
+          "b": "Morze Czarne",
+          "c": "Morze Śródziemne",
+          "d": "Morze Bałtyckie"
+        },
+        "question": "Nad jakim morzem leży Polska?"
+      },
+      {
+        "answer": "a",
+        "id": "3a4b5c6d7e8f",
+        "options": {
+          "a": "Lech Wałęsa",
+          "b": "Tadeusz Mazowiecki",
+          "c": "Jacek Kuroń",
+          "d": "Wojciech Jaruzelski"
+        },
+        "question": "Kto był pierwszym, historycznym przywódcą Niezależnego Samorządnego Związku Zawodowego \"Solidarność\"?"
+      }
+    ],
+    "zwierzeta": [
+      {
+        "answer": "c",
+        "id": "a1b2c3d4e5f1",
+        "options": {
+          "a": "Słoń afrykański",
+          "b": "Żyrafa",
+          "c": "Płetwal błękitny",
+          "d": "Niedźwiedź polarny"
+        },
+        "question": "Które zwierzę jest największym ssakiem na Ziemi?"
+      },
+      {
+        "answer": "a",
+        "id": "f1e5d4c3b2a1",
+        "options": { "a": "Kogut", "b": "Byk", "c": "Indor", "d": "Gąsior" },
+        "question": "Jak nazywa się samiec kury?"
+      },
+      {
+        "answer": "b",
+        "id": "1a2b3c4d5e6f",
+        "options": {
+          "a": "Sześć",
+          "b": "Osiem",
+          "c": "Dziesięć",
+          "d": "Cztery"
+        },
+        "question": "Ile nóg ma pająk?"
+      },
+      {
+        "answer": "c",
+        "id": "6f5e4d3c2b1a",
+        "options": { "a": "Orzeł", "b": "Gołąb", "c": "Sowa", "d": "Kruk" },
+        "question": "Który ptak jest tradycyjnym symbolem mądrości?"
+      },
+      {
+        "answer": "d",
+        "id": "abcdef123457",
+        "options": {
+          "a": "Lew",
+          "b": "Antylopa gnu",
+          "c": "Koń wyścigowy",
+          "d": "Gepard"
+        },
+        "question": "Które zwierzę lądowe jest najszybsze?"
+      },
+      {
+        "answer": "c",
+        "id": "754321fedcba",
+        "options": {
+          "a": "Krokodyl",
+          "b": "Wąż",
+          "c": "Kameleon",
+          "d": "Żółw"
+        },
+        "question": "Który gad jest znany ze zdolności do zmiany koloru skóry w celu kamuflażu?"
+      },
+      {
+        "answer": "b",
+        "id": "3456789abcde",
+        "options": {
+          "a": "Ryby",
+          "b": "Bambus",
+          "c": "Małe ssaki",
+          "d": "Owoce"
+        },
+        "question": "Co stanowi podstawę diety pandy wielkiej?"
+      },
+      {
+        "answer": "c",
+        "id": "edcba9876544",
+        "options": {
+          "a": "Na Arktyce",
+          "b": "W Afryce",
+          "c": "Na Antarktydzie",
+          "d": "W Australii"
+        },
+        "question": "Gdzie w naturalnym środowisku żyją pingwiny cesarskie?"
+      },
+      {
+        "answer": "b",
+        "id": "f0123456789b",
+        "options": {
+          "a": "Ewolucja",
+          "b": "Metamorfoza",
+          "c": "Fotosynteza",
+          "d": "Regeneracja"
+        },
+        "question": "Jak nazywa się proces, w którym gąsienica zmienia się w motyla?"
+      },
+      {
+        "answer": "b",
+        "id": "b9876543210f",
+        "options": { "a": "Wydra", "b": "Bóbr", "c": "Niedźwiedź", "d": "Łoś" },
+        "question": "Które zwierzę buduje tamy na rzekach?"
+      },
+      {
+        "answer": "c",
+        "id": "b2c3d4e5f6a8",
+        "options": {
+          "a": "Wiewiórka latająca",
+          "b": "Lotopałanka",
+          "c": "Nietoperz",
+          "d": "Sowa"
+        },
+        "question": "Jaki jest jedyny ssak potrafiący aktywnie latać?"
+      },
+      {
+        "answer": "b",
+        "id": "8a7f6e5d4c3b",
+        "options": { "a": "Stado", "b": "Wataha", "c": "Sfora", "d": "Klan" },
+        "question": "Jak nazywa się grupa wilków?"
+      },
+      {
+        "answer": "d",
+        "id": "d5e6f7a8b9c1",
+        "options": {
+          "a": "Kot",
+          "b": "Sowa",
+          "c": "Niedźwiedź",
+          "d": "Delfin"
+        },
+        "question": "Które zwierzę śpi z jednym okiem otwartym?"
+      },
+      {
+        "answer": "c",
+        "id": "1c0b9a8f7e6d",
+        "options": {
+          "a": "Orzeł bielik",
+          "b": "Albatros",
+          "c": "Struś",
+          "d": "Kondor"
+        },
+        "question": "Który ptak jest największy na świecie?"
+      },
+      {
+        "answer": "b",
+        "id": "e2f3a4b5c6d7",
+        "options": {
+          "a": "Wieloryb",
+          "b": "Słoń afrykański",
+          "c": "Żyrafa",
+          "d": "Człowiek"
+        },
+        "question": "U którego zwierzęcia ciąża trwa najdłużej?"
+      }
+    ]
+  }
+}
