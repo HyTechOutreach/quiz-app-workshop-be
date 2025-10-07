@@ -9,5 +9,6 @@ import quizData from './data/tech_outreach_quiz_final.json';
   imports: [QuestionsModule],
   controllers: [AppController],
   providers: [AppService, { provide: QUIZ_DATA_TOKEN, useValue: quizData }],
+  exports: [QUIZ_DATA_TOKEN],
 })
 export class AppModule {}
