@@ -1,14 +1,15 @@
 export interface QuizData {
   multiple: {
-    [key: string]: Question[];
+    [key: string]: QuestionData[];
   };
   single: {
-    [key: string]: Question[];
+    [key: string]: QuestionData[];
   };
 }
 
-export interface Question {
+export interface QuestionData {
+  id: string;
   question: string;
   options: { [key: string]: string };
-  answer: string[];
+  answer: string | string[];
 }
