@@ -21,6 +21,7 @@ export class QuestionsController {
   getQuestions(
     @Query('category') category: string,
     @Query('multiple') multiple: boolean,
+    @Query('amount') amount?: number,
   ): GetQuestionsDto {
     if (multiple === undefined) {
       multiple = Math.random() < 0.5;
@@ -35,10 +36,16 @@ export class QuestionsController {
       throw new BadRequestException('Category not found');
     }
 
+    const questions = this.questionsService.getQuestions(
+      difficultyData,
+      category,
+      amount,
+    );
+
     return {
       category,
       difficulty,
-      questions: difficultyData[category],
+      questions,
     };
   }
 }
