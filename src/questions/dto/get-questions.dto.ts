@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Difficulties, QuestionData } from 'src/data/quiz_data.model';
+import { Difficulties } from 'src/data/quiz_data.model';
 import { QuestionDataDto } from './question-data.dto';
 
 export class GetQuestionsDto {
@@ -17,7 +17,6 @@ export class GetQuestionsDto {
           c: 'Berlin',
           d: 'Madrid',
         },
-        answer: 'a',
       },
       {
         id: 'q2',
@@ -28,11 +27,10 @@ export class GetQuestionsDto {
           c: 'Python',
           d: 'CSS',
         },
-        answer: ['a', 'c'],
       },
     ],
   })
-  questions: QuestionData[];
+  questions: QuestionDataDto[];
 
   @ApiProperty({
     description: 'The category of the quiz questions',

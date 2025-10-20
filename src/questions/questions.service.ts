@@ -12,7 +12,7 @@ export class QuestionsService {
     difficultyData: DifficultyData,
     category: string,
     amount?: number,
-  ): QuestionData[] {
+  ): Omit<QuestionData, 'answer'>[] {
     let questions = difficultyData[category];
 
     // If amount is specified, return random subset of questions
@@ -24,7 +24,11 @@ export class QuestionsService {
       questions = this.getRandomQuestions(questions, parsedAmount);
     }
 
-    return questions;
+    // Strip the answer field from questions
+    return questions.map((question) => {
+      const { id, question: questionText, options } = question;
+      return { id, question: questionText, options };
+    });
   }
 
   private getRandomQuestions(

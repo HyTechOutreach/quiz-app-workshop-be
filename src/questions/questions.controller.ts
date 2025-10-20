@@ -54,7 +54,7 @@ export class QuestionsController {
   @ApiResponse({
     status: 200,
     description:
-      'Returns an array of questions with their IDs, text, options, and correct answers.',
+      'Returns an array of questions with their IDs, text, and options.',
     type: GetQuestionsDto,
     schema: {
       example: {
@@ -68,7 +68,6 @@ export class QuestionsController {
               c: 'Berlin',
               d: 'Madrid',
             },
-            answer: 'a',
           },
         ],
         category: 'Geography',
@@ -90,13 +89,9 @@ export class QuestionsController {
   })
   getQuestions(
     @Query('category') category: string,
-    @Query('multiple') multiple: boolean,
+    @Query('multiple') multiple: boolean = false,
     @Query('amount') amount?: number,
   ): GetQuestionsDto {
-    if (multiple === undefined) {
-      multiple = Math.random() < 0.5;
-    }
-
     const difficulty = multiple ? Difficulties.MULTIPLE : Difficulties.SINGLE;
     const difficultyData = this.quizData[difficulty];
 

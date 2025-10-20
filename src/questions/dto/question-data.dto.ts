@@ -27,12 +27,4 @@ export class QuestionDataDto {
     },
   })
   options: { [key: string]: string };
-
-  @ApiProperty({
-    description:
-      'The correct answer(s). Can be a single string for single-choice questions or an array of strings for multiple-choice questions',
-    example: 'a',
-    oneOf: [{ type: 'string' }, { type: 'array', items: { type: 'string' } }],
-  })
-  answer: string | string[];
 }
