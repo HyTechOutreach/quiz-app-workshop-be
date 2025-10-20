@@ -183,8 +183,12 @@ describe('ValidateController', () => {
         },
       };
 
-      const mockResult = { score: 100, totalQuestions: 1 };
-      jest.spyOn(service, 'validateForm').mockReturnValue(mockResult as any);
+      const mockResult = {
+        results: { a1b2c3d4e5f6: true },
+        correct: 1,
+        total: 1,
+      };
+      jest.spyOn(service, 'validateForm').mockReturnValue(mockResult);
 
       const result = controller.validateForm(form);
       expect(result).toEqual(mockResult);
