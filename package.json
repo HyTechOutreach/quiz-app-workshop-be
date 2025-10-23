@@ -64,9 +64,26 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "collectCoverageFrom": [
-      "**/*.(t|j)s"
+      "**/*.(t|j)s",
+      "!**/*.dto.ts",
+      "!**/*.module.ts",
+      "!**/main.ts",
+      "!**/*.spec.ts",
+      "!**/quiz_data.model.ts",
+      "!**/constants.ts"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/$1"
+    },
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 85,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   }
 }

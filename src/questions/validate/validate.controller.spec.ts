@@ -193,5 +193,34 @@ describe('ValidateController', () => {
       const result = controller.validateForm(form);
       expect(result).toEqual(mockResult);
     });
+
+    it('should delegate to service without modification', () => {
+      const form: ValidateFormDto = {
+        answers: {
+          q1: ['a'],
+          q2: ['b', 'c'],
+        },
+      };
+
+      const spy = jest.spyOn(service, 'validateForm');
+      controller.validateForm(form);
+
+      expect(spy).toHaveBeenCalledTimes(1);
+      expect(spy).toHaveBeenCalledWith(form);
+    });
+
+    it('should handle large form with many questions', () => {
+      const answers: Record<string, string[]> = {};
+      for (let i = 1; i <= 20; i++) {
+        answers[`q${i}`] = ['a'];
+      }
+
+      const form: ValidateFormDto = { answers };
+      const spy = jest.spyOn(service, 'validateForm');
+
+      controller.validateForm(form);
+
+      expect(spy).toHaveBeenCalledWith(form);
+    });
   });
 });
