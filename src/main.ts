@@ -5,7 +5,12 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  const whitelist = ['http://localhost:4200', 'http://127.0.0.1:4200'];
+  const whitelist = [
+    'http://localhost:4200',
+    'http://127.0.0.1:4200',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+  ];
 
   app.enableCors({
     origin: (
