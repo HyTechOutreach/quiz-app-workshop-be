@@ -11,12 +11,9 @@ export class AnswersService extends BaseQuizService {
     for (const questionId of dto.questionIds) {
       const question = this.getQuestion(questionId);
       if (question) {
-        answers[questionId] = {
-          answer: Array.isArray(question.answer)
-            ? question.answer
-            : [question.answer],
-          type: question.type,
-        };
+        answers[questionId] = Array.isArray(question.answer)
+          ? question.answer
+          : [question.answer];
       }
     }
 

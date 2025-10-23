@@ -15,7 +15,7 @@ export class AnswersController {
     description:
       'Returns the correct answers for the specified question IDs. ' +
       'This endpoint can be used to retrieve answer keys for quiz questions. ' +
-      'For each question, returns the correct answer(s) and the question type (single or multiple choice).',
+      'For each question, returns the correct answer(s) as an array.',
   })
   @ApiBody({
     type: GetAnswersDto,
@@ -42,18 +42,9 @@ export class AnswersController {
     schema: {
       example: {
         answers: {
-          q1: {
-            answer: ['a'],
-            type: 'single',
-          },
-          q2: {
-            answer: ['b', 'c'],
-            type: 'multiple',
-          },
-          q3: {
-            answer: ['d'],
-            type: 'single',
-          },
+          q1: ['a', 'b'],
+          q2: ['d'],
+          q3: ['c'],
         },
       },
     },

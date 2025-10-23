@@ -25,10 +25,7 @@ describe('AnswersController', () => {
       const mockDto = { questionIds: ['a1b2c3d4e5f6'] };
       const mockResponse = {
         answers: {
-          a1b2c3d4e5f6: {
-            answer: ['a', 'b', 'c'],
-            type: 'multiple',
-          },
+          a1b2c3d4e5f6: ['a', 'b', 'c'],
         },
       };
 
@@ -56,9 +53,9 @@ describe('AnswersController', () => {
       const mockDto = { questionIds: ['q1', 'q2', 'q3'] };
       const mockResponse = {
         answers: {
-          q1: { answer: ['a'], type: 'single' },
-          q2: { answer: ['b', 'c'], type: 'multiple' },
-          q3: { answer: ['d'], type: 'single' },
+          q1: ['a'],
+          q2: ['b', 'c'],
+          q3: ['d'],
         },
       };
 

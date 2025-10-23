@@ -25,9 +25,7 @@ describe('AnswersService', () => {
 
       expect(result.answers).toBeDefined();
       expect(result.answers['a1b2c3d4e5f6']).toBeDefined();
-      expect(result.answers['a1b2c3d4e5f6'].answer).toBeDefined();
-      expect(result.answers['a1b2c3d4e5f6'].type).toBe('multiple');
-      expect(Array.isArray(result.answers['a1b2c3d4e5f6'].answer)).toBe(true);
+      expect(Array.isArray(result.answers['a1b2c3d4e5f6'])).toBe(true);
     });
 
     it('should return empty object for non-existent question IDs', () => {
@@ -74,8 +72,7 @@ describe('AnswersService', () => {
         });
 
         expect(result.answers[questionId]).toBeDefined();
-        expect(result.answers[questionId].type).toBe('single');
-        expect(Array.isArray(result.answers[questionId].answer)).toBe(true);
+        expect(Array.isArray(result.answers[questionId])).toBe(true);
       }
     });
   });
